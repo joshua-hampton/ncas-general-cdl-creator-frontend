@@ -18,8 +18,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3 # Log in to Docker Hub using provided credentials
         with:
-          username: ${{ secrets.DOCKER_USERNAME }} # Your Docker Hub username
-          password: ${{ secrets.DOCKER_TOKEN }} # Your Docker Hub Personal Access Token
+          username: jmhampton
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Extract Release Tag
         id: get_tag # Assign an ID to this step to reference its outputs
@@ -31,6 +31,6 @@ jobs:
           context: . # Build context is the current directory (application repo)
           push: true # Push the image to Docker Hub
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/ncas-general-cdl-creator-frontent:${{ steps.get_tag.outputs.RELEASE_TAG }} # Tag with release name
+            jmhampton/ncas-general-cdl-creator-frontent:${{ steps.get_tag.outputs.RELEASE_TAG }} # Tag with release name
           cache-from: type=gha # Use GitHub Actions cache for faster builds
           cache-to: type=gha,mode=max
