@@ -27,12 +27,12 @@ export default function TemporaryDrawer() {
           </ListItemButton>
         </ListItem>
         <ListItem key="home">
-          <ListItemButton href="/">
+          <ListItemButton href="">
             <ListItemText primary="Home" />
           </ListItemButton>
         </ListItem>
         <ListItem key="about">
-          <ListItemButton href="/about.html">
+          <ListItemButton href="about.html">
             <ListItemText primary="About" />
           </ListItemButton>
         </ListItem>
