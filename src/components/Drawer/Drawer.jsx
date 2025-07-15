@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
           </ListItemButton>
         </ListItem>
         <ListItem key="home">
-          <ListItemButton href="">
+          <ListItemButton href="index.html">
             <ListItemText primary="Home" />
           </ListItemButton>
         </ListItem>
