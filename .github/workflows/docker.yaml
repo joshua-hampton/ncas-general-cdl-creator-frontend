@@ -31,6 +31,6 @@ jobs:
           context: . # Build context is the current directory (application repo)
           push: true # Push the image to Docker Hub
           tags: |
-            jmhampton/ncas-general-cdl-creator-frontent:${{ steps.get_tag.outputs.RELEASE_TAG }} # Tag with release name
+            jmhampton/ncas-general-cdl-creator-frontent:${{ steps.get_tag.outputs.RELEASE_TAG }}
           cache-from: type=gha # Use GitHub Actions cache for faster builds
           cache-to: type=gha,mode=max
