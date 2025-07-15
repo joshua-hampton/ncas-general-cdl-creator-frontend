@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.App {
+  padding: 0.5rem;
+  @apply mt-20;
+}
+
+body {
+  @apply dark:bg-[#1e1e2e] dark:text-[#cdd6f4];
+}
+
+#root {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  color: blue;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+p {
+  @apply text-lg;
+}
+
+.AccordionHeader {
+  @apply bg-[#eee9d5] rounded-lg;
+}
+
+.AccordionHeader h2 {
+  @apply text-xl font-bold mb-2;
+}
