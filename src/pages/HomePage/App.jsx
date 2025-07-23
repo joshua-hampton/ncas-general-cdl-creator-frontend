@@ -17,7 +17,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 //const CDL_API_BASE = 'http://localhost:8000/create-cdl'
-const CDL_API_BASE = 'http://localhost:3000/create-cdl'
+const CDL_API_BASE = 'https://force-test.ddns.net/ncas-general-cdl/api/create-cdl'
 
 const API_OPTIONS = {
   method: 'GET',
